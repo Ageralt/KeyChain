@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UUID.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString * uuid= [UUID getUUID];
+    NSLog(@"uuid=%@",uuid);
 }
 
 - (void)didReceiveMemoryWarning {
